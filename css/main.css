@@ -1,15 +1,6 @@
 body
 {height: 100vh;
-
-
-    background-image: url(/img/fondo-tp.jpg);
-    
-    background-repeat: no-repeat;
-    background-size: cover;
 }
-
-
-header img{width: 20%;}
 
 header{text-align: center;}
 

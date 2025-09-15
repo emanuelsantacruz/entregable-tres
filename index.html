@@ -1,62 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- link css -->
-     <link rel="stylesheet" href="./css/main.css">
-    <title>LeParfum ARG</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LeParfum ARG</title>
+ <!-- link  bootstrap y css -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+    crossorigin="anonymous"
+  />
+
+  <style>
+    header {
+      background-color: #ffe6f0;
+      padding: 2rem 0;
+    }
+
+    @media (min-width: 769px) {
+      .main-perfume-img {
+        max-width: 60%;
+      }
+    }
+  </style>
 </head>
-<body>
+ <!--etiqueta para el banner principal-->
 
-<!--etiqueta para el banner principal-->
-<header>
-  <!-- etiqueta para img -->
-     <img src="img/logo.png" alt="">
-<!-- etiqueta para menu de navegacion  -->
- <nav>
-    <!-- <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="./pages/productos.html">Productos</a></li>
-        <li><a href="./pages/contacto.html">Contacto</a></li>
-    </ul> -->
-<div class="container text-center">
-  <div class="row justify-content-md-center">
-    <div class="col col-lg-2">
-     <a href="index.html">Home</a>
-    </div>
-    <div class="col-md-auto">
-     <a href="./pages/productos.html">Productos</a>
-    </div>
-    <div class="col col-lg-2">
-      <a href="./pages/contacto.html">Contacto</a>
-    </div>
-  </div>
-</div>
- </nav>
- 
-</header>
+<body class="d-flex flex-column min-vh-100">
 
-<!--  -->
+  <header class="text-center">
+    <!-- etiqueta para img -->
+    <img src="img/logo.png" alt="Logo LeParfum ARG" class="logo-img" style="max-height: 120px;" />
+    <!-- etiqueta para menu de navegacion  -->
+    <nav class="mt-4">
+      <div class="container">
+        <div class="row justify-content-center g-2">
+          <div class="col-4 col-md-2">
+            <a href="index.html" class="d-block text-center border rounded py-2 nav-link bg-white">Home</a>
+          </div>
+          <div class="col-4 col-md-2">
+            <a href="./pages/productos.html" class="d-block text-center border rounded py-2 nav-link bg-white">Productos</a>
+          </div>
+          <div class="col-4 col-md-2">
+            <a href="./pages/contacto.html" class="d-block text-center border rounded py-2 nav-link bg-white">Contacto</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- etiqueta para el contenido principal -->
 
-<!-- etiqueta para el contenido principal -->
-<main class="container">
-    <h1>LeParfum ARG</h1>
+  <main class="container mt-5 flex-grow-1">
+    <h1 class="text-center mb-4 border-bottom pb-2">LeParfum ARG</h1>
 
-    <div class="main-home">
-        <img src="img/Imagen de WhatsApp 2025-08-14 a las 15.09.19_cd722d96.jpg" alt="Perfume destacado">
-        <p>
-            ¿Buscas tu próxima fragancia favorita? En nuestra tienda online, te espera una selección que lo tiene todo. Explora los clásicos perfumes de diseñador que marcan tendencia, o déjate seducir por el misterio y la opulencia de las más exquisitas fragancias árabes. En nuestra tienda, cada compra es una experiencia segura y garantizada.
+    <div class="row align-items-center">
+      <div class="col-md-6 mb-4 mb-md-0 text-center">
+        <img
+          src="img/Imagen de WhatsApp 2025-08-14 a las 15.09.19_cd722d96.jpg"
+          alt="Perfume destacado"
+          class="img-fluid rounded main-perfume-img"
+        />
+      </div>
+      <div class="col-md-6">
+        <p class="fs-5 text-justify">
+          ¿Buscas tu próxima fragancia favorita? En nuestra tienda online, te espera una selección que lo tiene todo.
+          Explorá los clásicos perfumes de diseñador que marcan tendencia, o dejate seducir por el misterio y la opulencia
+          de las más exquisitas fragancias árabes. En nuestra tienda, cada compra es una experiencia segura y garantizada.
         </p>
+      </div>
     </div>
-</main>
+  </main>
 
-<footer>
-    <p>Todos los derechos reservados</p>
-</footer>
+   <footer class="bg-dark text-white text-center py-3 mt-auto">
+    <p class="mb-0">Todos los derechos reservados</p>
+  </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"
+  ></script>
 </body>
-
 </html>
