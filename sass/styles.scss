@@ -48,14 +48,9 @@ $font-size-small: 0.9rem;
   }
 }
 
-html, body {
-  overflow-x: hidden; // intento de evitar el lijero desborde
+body {
   min-height: 100vh;
-  
-}
-
-body{
-  @include flex(column)
+  @include flex(column);
 }
 
 header {
@@ -196,7 +191,7 @@ main {
 }
 
 footer {
-  width: 100%;
+  width: 100vw;
   background-color: #222;
   color: white;
   text-align: center;
