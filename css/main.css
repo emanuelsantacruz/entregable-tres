@@ -27,8 +27,6 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 header {
@@ -154,7 +152,7 @@ main.main-home p {
 }
 
 footer {
-  width: 100vw;
+  /* width: 100vw; */
   background-color: #222;
   color: white;
   text-align: center;
